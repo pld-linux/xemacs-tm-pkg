@@ -3,7 +3,7 @@ Summary(pl):	Wsparcie do MIME dla [X]Emacsa
 Name:		xemacs-tm-pkg
 %define 	srcname	tm
 Version:	1.37
-Release:	1
+Release:	2
 License:	GPL
 Group:		Applications/Editors/Emacs
 Source0:	ftp://ftp.xemacs.org/xemacs/packages/%{srcname}-%{version}-pkg.tar.gz
