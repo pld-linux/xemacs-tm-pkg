@@ -25,7 +25,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 [X]Emacs MIME support.
 
-%description -l pl 
+%description -l pl
 Wsparcie do MIME dla [X]Emacsa.
 
 %prep
@@ -37,14 +37,14 @@ install -d $RPM_BUILD_ROOT%{_datadir}/xemacs-packages
 
 cp -a * $RPM_BUILD_ROOT%{_datadir}/xemacs-packages
 
-gzip -9nf lisp/tm/ChangeLog 
+gzip -9nf lisp/tm/ChangeLog
 
 %clean
 rm -fr $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc lisp/tm/ChangeLog.gz 
+%doc lisp/tm/ChangeLog.gz
 %dir %{_datadir}/xemacs-packages/lisp/*
 %{_datadir}/xemacs-packages/lisp/*/*.elc
 %{_datadir}/xemacs-packages/lib-src/*
