@@ -2,7 +2,7 @@ Summary:	[X]Emacs MIME support
 Summary(pl):	Wsparcie do MIME dla [X]Emacsa
 Name:		xemacs-tm-pkg
 %define 	srcname	tm
-Version:	1.32
+Version:	1.34
 Release:	1
 License:	GPL
 Group:		Applications/Editors/Emacs
@@ -37,8 +37,6 @@ install -d $RPM_BUILD_ROOT%{_datadir}/xemacs-packages
 
 cp -a * $RPM_BUILD_ROOT%{_datadir}/xemacs-packages
 
-gzip -9nf lisp/tm/ChangeLog
-
 # remove .el file if corresponding .elc file exists
 find $RPM_BUILD_ROOT -type f -name "*.el" | while read i; do test ! -f ${i}c || rm -f $i; done
 
@@ -47,7 +45,7 @@ rm -fr $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc lisp/tm/ChangeLog.gz
+%doc lisp/tm/ChangeLog
 %dir %{_datadir}/xemacs-packages/lisp/*
 %{_datadir}/xemacs-packages/lisp/*/*.el*
 %{_datadir}/xemacs-packages/lib-src/*
