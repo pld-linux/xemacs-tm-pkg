@@ -1,5 +1,5 @@
-Summary:	Emacs MIME support
-Summary(pl):	Emacs MIME support
+Summary:	[X]Emacs MIME support
+Summary(pl):	Wsparcie do MIME dla [X]Emacsa
 Name:		xemacs-tm-pkg
 %define 	srcname	tm
 Version:	1.29
@@ -24,8 +24,10 @@ Requires:	xemacs-base-pkg
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
+[X]Emacs MIME support.
 
 %description -l pl 
+Wsparcie do MIME dla [X]Emacsa.
 
 %prep
 %setup -q -c
