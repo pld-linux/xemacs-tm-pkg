@@ -2,7 +2,7 @@ Summary:	Emacs MIME support
 Summary(pl):	Emacs MIME support
 Name:		xemacs-tm-pkg
 %define 	srcname	tm
-Version:	1.24
+Version:	1.26
 Release:	1
 License:	GPL
 Group:		Applications/Editors/Emacs
