@@ -2,12 +2,12 @@ Summary:	[X]Emacs MIME support
 Summary(pl.UTF-8):	Wsparcie do MIME dla [X]Emacsa
 Name:		xemacs-tm-pkg
 %define 	srcname	tm
-Version:	1.37
-Release:	2
+Version:	1.39
+Release:	1
 License:	GPL
 Group:		Applications/Editors/Emacs
 Source0:	http://ftp.xemacs.org/xemacs/packages/%{srcname}-%{version}-pkg.tar.gz
-# Source0-md5:	9cd28b13243debe9a986dcbd332f1ccd
+# Source0-md5:	dd747c6f21e7e28b7facb546b4fa231f
 #Patch0:	xemacs-tm-pkg-info.patch
 URL:		http://www.xemacs.org/
 BuildArch:	noarch
